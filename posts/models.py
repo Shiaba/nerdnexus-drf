@@ -4,6 +4,8 @@ from django.contrib.auth.models import User
 """
 Need to add categories to model & category options
 """
+
+
 class Post(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
